@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rezultat</title>
+</head>
+
+<body>
+
+
+<h1>Резултати од анализа</h1>
+
+
+<p>Внесен Текст</p>
+
+<p>
+<%= text %>
+</p>
+
+
+<hr>
+
+<table border="1" width="100%">
+    <tr>
+        <th>Вкупен број на карактери</th>
+        <th>Зворови помали од 5 карактери</th>
+        <th>Зборови поголеми од 5 карактери</th>
+        <th>Зборови еднакви на 5 карактери</th>
+        <th>Вкупен број на параграфи</th>
+        <th>Вкупен број на зборови</th>
+        <th>Зборови што започнуваат со а,е,и,о,у</th>
+    </tr>
+
+    <tr>
+        <th><%= characters %></th>
+        <th><%= lessThan5 %></th>
+        <th><%= biggerThan5 %></th>
+        <th><%= equal5 %></th>
+        <th><%= paragraphs %></th>
+        <th><%= totalWords %></th>
+        <th><%= vowelsWords %></th>
+    </tr>
+</table>
+
+
+
+<a href="/analiza">Назад</a>
+
+
+</body>
+</html>
